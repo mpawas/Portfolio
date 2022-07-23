@@ -1,0 +1,178 @@
+
+.navbar{
+    color: #fff;
+    position: relative;
+    display: flex;
+    height: 6rem;
+    margin: auto;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.navbar .header-img {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+    width: auto;
+    height: 6rem;
+    position: absolute;
+   
+}
+.navbar .menu{
+    display: none;
+}
+.header-img img{
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+    margin-left: 20px;
+
+}
+.navbar .name{
+    font-size: 36px;
+    display: flex;
+    position: absolute;
+    margin: auto;
+    color: #fff;
+    font-weight: 700;
+    align-self: center;
+}
+.navbar .contact{
+    flex-direction: column;
+    display: flex;
+margin: 20px;
+align-self: flex-end;
+}
+
+.contact-content{
+text-decoration: none;
+color: #fff;
+
+}
+.menu-components{
+    display: none;
+}
+
+.Page{
+display: flex;
+}
+
+.sidebar{
+    width: 20%;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.sidebar-content{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px 10px 20px;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase ;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebar-link{
+    color: #fff;
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+}
+
+.sidebar-link-content{
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+    width: 25%;
+    text-shadow: 2px 2px 4px #000000;
+}
+.sidebar-footer{
+    color: #fff;
+    display: block;
+    font-family: 'centaur';
+    font-size: 14px;
+    padding-top: 45%;
+    text-shadow: 2px 2px 4px #000000;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.sidebar-footer p{
+    text-align: center;
+}
+.home{
+    display: flex;
+    position: relative;
+}
+.ContentBox{
+    float: left;
+    z-index: 10;
+
+}
+.ImageBox{
+    height: 400px;
+    width: auto;
+    text-shadow: 2px 2px 4px #000000;
+    right: 0;
+    position: absolute;
+}
+.Image{
+    max-height: 100%;
+    width: auto;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .Page{
+        width: 100%;
+        display: block;
+    }
+    .header-img img{
+        width: 60%;
+        height: 60%;
+        margin: 20px;
+    }
+    .navbar .name{
+        font-size: 26px;
+        display: flex;
+        margin: auto;
+        position: absolute;
+    font-weight: 600;
+    align-self: center;
+    }
+    .navbar .contact, .sidebar{
+        display: none;
+    }
+    .navbar .menu{
+        display: flex;
+        position: absolute;
+        align-self: flex-end;
+        padding: 30px;
+        font-size: 22px;
+    }
+  
+    .menu-contents{
+        font-size: 24px;
+        font-weight: 500;
+        padding: 10px;
+        margin: 20px;
+        background-color: #414141;
+        text-align: center;
+        text-transform: uppercase ;
+        text-shadow: 2px 2px 4px #000000;
+        /* background-color: #000000; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .menu-footer{
+        margin-top: 70%;
+        text-align: center;
+    }
+    
+}
