@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Component.css'
 
 
@@ -6,26 +7,26 @@ function Sidebar() {
     return (
         <div className='sidebar'>
             <div className='sidebar-content'>
-                <a href=''>Home</a>
+               <Link to={'/'}>Home</Link>
             </div>
             <div className='sidebar-content'>
-                <a href=''>About</a>
+                <Link to={'/about'}>About</Link>
             </div>
             <div className='sidebar-content'>
-                <a>Experience</a> 
+                <Link to={'/experience'}>Experience</Link> 
             </div>
             <div className='sidebar-content'>
-                <a></a>
+                <Link to={'/projects'}>Projects</Link> 
             </div>
             <div className='sidebar-content'>
-                Contact
+                <Link to={'/contact'}>Contact</Link>
             </div>
             <div className='sidebar-link'>
-                <a className='sidebar-link-content' href=""><i className='fab fa-github'></i></a>
-                <a className='sidebar-link-content' href=""> <i className='fab fa-instagram'></i></a>
-                <a className='sidebar-link-content' href=""><i className='fab fa-facebook-f'></i></a>
-                <a className='sidebar-link-content' href=""><i className='fab fa-twitter'></i></a>
-                <a className='sidebar-link-content' href=""><i className='fa fa-file-pdf'></i></a>
+                <p className='sidebar-link-content' to="github.com"><i className='fab fa-github'></i></p >
+                <p className='sidebar-link-content' to="instagram.coom"> <i className='fab fa-instagram'></i></p >
+                <p className='sidebar-link-content' to=""><i className='fab fa-facebook-f'></i></p >
+                <p className='sidebar-link-content' to=""><i className='fab fa-twitter'></i></p >
+                <p className='sidebar-link-content' to=""><i className='fa fa-file-pdf'></i></p >
             </div>
             <div className='sidebar-footer'>
                 <p><i className='fa-regular fa-copyright'></i> Pawas Mishra</p>

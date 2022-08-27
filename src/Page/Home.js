@@ -1,8 +1,16 @@
-import './Component.css'
-import logo from './Logo.png'
+import '../Components/Component.css'
+import logo from '../Components/Logo.png'
+import React, { useEffect, useState } from 'react'
+import Loading from '../Components/loadingComponent'
+
 
 function Home() {
+    const [loading, setLoading] = useState(true)
+    useEffect(()=>{
+        setTimeout(p=>setLoading(false), 1000)
+    },[])
     return (
+        loading ? <Loading/> :
         <div className="home">
             <div className='ContentBox'>
                 <p style={{fontSize:"24px", width:'50%'}}>Hi, I am</p>

@@ -20,7 +20,7 @@ transition: 0.9s;
 exports.Main = styled.div`
 color:#bbb; 
 position:relative;
-width:auto;
+width: -webkit-fill-available;
 padding:20px;
 overflow-x: hidden;
 height: calc(100vh - 6rem);
@@ -31,7 +31,7 @@ height: calc(100vh - 6rem);
   }
   
 `
-exports.Content = styled.div`
-position:fixed;  
-`
+// exports.Content = styled.div`
+// position:fixed;  
+// `
 
