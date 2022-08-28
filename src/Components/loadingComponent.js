@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components'
 
 const Loading = () => {
     return (
-        <Heading data-text="Pawas Mishra">Pawas Mishra</Heading>
+        <Heading data-text="...">...</Heading>
     )
 }
 
@@ -18,7 +18,7 @@ const keyframe = keyframes`
 
 const Heading = styled.h1`
     color: rgba(0, 0, 0, .3);
-    font-size: 2em;
+    font-size: 5em;
     margin:auto;
     height:100%;
     display: flex;
@@ -32,7 +32,7 @@ const Heading = styled.h1`
         max-width: 7em;
         white-space: nowrap;
         color: #FFF;
-        animation: ${keyframe} 1s linear;
+        animation: ${keyframe} 2s linear;
     }
 `;
 

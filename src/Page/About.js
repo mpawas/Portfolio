@@ -8,7 +8,11 @@ const About = () => {
     },[])
   return (
     loading ? <Loading/> :
-    <div>About</div>
+    <>
+    <ksdncjakd>
+      dsc asdcn
+    </ksdncjakd>
+    </>
   )
 }
 
