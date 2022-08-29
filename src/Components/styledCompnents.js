@@ -6,7 +6,7 @@ margin-top: 6rem;
 height: ${props => props.display};
 width: 100%;
 position: fixed;
-z-index: 2;
+z-index: 100;
 top: 0;
 color: #fff;
 left: 0;

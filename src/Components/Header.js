@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 function Header({ setDisplay, display, menuClass, cls }) {
     const toogleMenu = () => {
         setDisplay(display === '0%' ? '100%' : '0%')
-        // menuClass(cls === 'fa fa-bars'? "fa-solid fa-xmark":"fa fa-bars")
     }
 
 
@@ -21,9 +20,9 @@ function Header({ setDisplay, display, menuClass, cls }) {
                     <p>Pawas Mishra</p>
                 </div>
                 <div className='contact'>
-                    <Link className='contact-content' to='tel:+9779869074903'><i className="fa fa-square-phone"></i> +977 - 9869074903</Link>
-                    <Link className='contact-content' to='mailto:pawas.mis@gmail.com'><i className="fa fa-envelope"></i> pawas.mis@gmail.com</Link>
-                    <Link className='contact-content' to='mailto:pawas.mis@gmail.com'><i className="fa fa-envelope"></i> mishra.pawas@hotmail.com</Link>
+                    <a className='contact-content' href='tel:+9779869074903'><i className="fa fa-square-phone"></i> +977 - 9869074903</a>
+                    <a className='contact-content' href='mailto:pawas.mis@gmail.com?subject=Hello'><i className="fa fa-envelope"></i> pawas.mis@gmail.com</a>
+                    <a className='contact-content' href='mailto:mishra.pawas@hotmail.com?subject=Hello'><i className="fa fa-envelope"></i> mishra.pawas@hotmail.com</a>
                 </div>
                 <div className='menu' onClick={toogleMenu}>
                     <i className="fa fa-bars"></i>

@@ -9,9 +9,7 @@ const About = () => {
   return (
     loading ? <Loading/> :
     <>
-    <ksdncjakd>
-      dsc asdcn
-    </ksdncjakd>
+    
     </>
   )
 }
