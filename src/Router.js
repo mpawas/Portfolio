@@ -12,8 +12,6 @@ function Router() {
         { path: "/about", element: <About /> },
         { path: "/contact", element: <Contact /> },
         { path: "/projects", element: <Projects /> },
-        { path: "/experience", element: <Experience /> },
-        { path: "/loading", element: <Loading /> },
     ]);
 
     return element;

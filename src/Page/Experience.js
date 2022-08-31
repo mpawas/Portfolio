@@ -3,12 +3,7 @@ import Loading from '../Components/loadingComponent'
 
 
 const Experience = () => {
-    const [loading, setLoading] = useState(true)
-    useEffect(()=>{
-        setTimeout(p=>setLoading(false), 1000)
-    },[])
   return (
-    loading ? <Loading/> :
     <div>Experience</div>
   )
 }
